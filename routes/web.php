@@ -29,7 +29,9 @@ Route::group(['middleware' => ['auth', 'verified']], function(){
     Route::post('products/{product}/favorite', 'ProductsController@favor')->name('products.favor');
     Route::delete('products/{product}/favorite', 'ProductsController@disfavor')->name('products.disfavor');
 
+    Route::get('cart', 'CartController@index')->name('cart.index');
     Route::post('cart', 'CartController@add')->name('cart.add');
+    Route::delete('cart/{productSku}', 'CartController@remove')->name('cart.remove');
 });
 
 Route::get('products/{product}', 'ProductsController@show')->name('products.show');
