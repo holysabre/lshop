@@ -31,4 +31,5 @@ class ProductSku extends Model
         return $this->increment('stock', $amount);
     }
 
+
 }

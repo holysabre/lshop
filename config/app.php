@@ -229,4 +229,6 @@ return [
 
     ],
 
+    'order_ttl' => env('ORDER_TTL', 1800),
+
 ];
