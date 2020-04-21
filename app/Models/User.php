@@ -9,6 +9,9 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable implements MustVerifyEmail
 {
     use Notifiable;
+//    use Notifiable{
+//        notify as protected LaravelNotify;
+//    }
 
     /**
      * The attributes that are mass assignable.
@@ -53,5 +56,19 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return $this->hasMany(CartItem::class);
     }
+
+    /**
+     * @param $instance
+     * 通知
+     */
+//    public function notify($instance)
+//    {
+//        // 只有数据库类型通知才需提醒，直接发送 Email 或者其他的都 Pass
+//        if(method_exists($instance, 'toDatabase')){
+//            $this->increment('notification_count');
+//        }
+//
+//        $this->laravelNotify($instance);
+//    }
 
 }
