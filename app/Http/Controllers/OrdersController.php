@@ -112,7 +112,7 @@ class OrdersController extends Controller
             throw new InvalidRequestException('该订单已经申请过退款，请勿重复申请');
         }
         // 将用户输入的退款理由放到订单的 extra 字段中
-        $extra = $request->extra ? : [];
+        $extra = $order->extra ? : [];
         $extra['refund_reason'] = $request->input('reason');
         $order->update([
             'refund_status' => Order::REFUND_STATUS_APPLIED,
