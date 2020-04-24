@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f909c724-1414-4864-996e-44012f39bbd6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Admin/Controllers/CouponCodesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin/Controllers/CouponCodesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CouponCodesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CouponCodesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Jobs/CloseOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/CloseOrder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/CouponCode.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/CouponCode.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Services/OrderService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/OrderService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/cart/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cart/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/orders/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/orders/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +177,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587432332013</updated>
       <workItem from="1587432336169" duration="27618000" />
-      <workItem from="1587542810617" duration="22867000" />
+      <workItem from="1587542810617" duration="25643000" />
     </task>
     <servers />
   </component>

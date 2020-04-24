@@ -41,6 +41,9 @@ class CloseOrder implements ShouldQueue
                 \Log::info('===closeOrder==='.print_r(1,1));
                 $item->productSku->addStock($item->amount);
             }
+            if($this->order->couponCode){
+                $this->order->couponCode->changeUsed(false);
+            }
         });
     }
 }
