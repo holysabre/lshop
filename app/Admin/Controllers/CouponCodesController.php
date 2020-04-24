@@ -92,6 +92,8 @@ class CouponCodesController extends AdminController
         $form->saving(function (Form $form) {
             if (!$form->code) {
                 $form->code = CouponCode::findAvailableCode();
+            }else{
+                $form->code = strtoupper($form->code);
             }
         });
 
