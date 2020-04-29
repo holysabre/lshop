@@ -2,15 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\OrderItem;
 use App\Models\Product;
+use App\Services\CategoryService;
 use Illuminate\Http\Request;
 use App\Exceptions\InvalidRequestException;
 
 class ProductsController extends Controller
 {
 
-    public function index(Request $request)
+    public function index(Request $request, CategoryService $categoryService)
     {
 
         // 创建一个查询构造器
@@ -29,6 +31,19 @@ class ProductsController extends Controller
                     });
             });
         }
+
+        // 如果有传入 category_id 字段，并且在数据库中有对应的类目
+        if($request->category_id && $category = Category::find($request->category_id)){
+            // 如果这是一个父类目
+            if($category->is_directory){
+                $builder->whereHas('category', function($query) use($category) {
+                    $query->where('path', 'like', $category->path.$category->id.'-%');
+                });
+            }else{
+                $builder->where('category_id', $category->id);
+            }
+        }
+//        dd($builder);
 
         // 是否有提交 order 参数，如果有就赋值给 $order 变量
         // order 参数用来控制商品的排序规则
@@ -51,6 +66,10 @@ class ProductsController extends Controller
                 'search' => $search,
                 'order'  => $order,
             ],
+            // 等价于 isset($category) ? $category : null
+            'category' => $category ?? null,
+            // 将类目树传递给模板文件
+            'categoryTree' => $categoryService->getCategoryTree(),
         ]);
     }
 
