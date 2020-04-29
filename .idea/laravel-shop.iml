@@ -120,5 +120,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="fang" />
+    <orderEntry type="module" module-name="enterprise" />
   </component>
 </module>

@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f909c724-1414-4864-996e-44012f39bbd6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../enterprise/app/Http/Controllers/Api/AuthorizationsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../enterprise/app/Http/Controllers/Api/AuthorizationsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-shop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/OrderFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/OrderFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/OrderItemFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/OrderItemFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +20,7 @@
     </execution>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../enterprise" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -157,6 +158,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../enterprise/app/Http/Requests/Api" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -174,7 +180,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587432332013</updated>
       <workItem from="1587432336169" duration="27618000" />
-      <workItem from="1587542810617" duration="28213000" />
+      <workItem from="1587542810617" duration="65921000" />
     </task>
     <servers />
   </component>
@@ -182,14 +188,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="578" y="287" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1587522826198">
+    <state x="578" y="287" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1587975615129">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="578" y="287" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1587522826198" />
+    <state x="578" y="287" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1587975615129" />
     <state x="593" y="348" key="NewPhpClassDialog" timestamp="1587462653623">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="593" y="348" key="NewPhpClassDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1587462653623" />
+    <state x="658" y="455" key="NewPhpFileDialog" timestamp="1587970327486">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="658" y="455" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1587970327486" />
     <state x="517" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1587543700503">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -202,9 +212,13 @@
       <screen x="40" y="23" width="1640" height="1027" />
     </state>
     <state x="100" y="100" width="1480" height="850" key="dock-window-2/40.23.1640.1027@40.23.1640.1027" timestamp="1587695550799" />
-    <state x="329" y="91" width="975" height="774" key="find.popup" timestamp="1587625192810">
+    <state x="329" y="91" width="975" height="774" key="find.popup" timestamp="1587969966541">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="329" y="91" width="975" height="774" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1587625192810" />
+    <state x="329" y="91" width="975" height="774" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1587969966541" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1587814292510">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1587814292510" />
   </component>
 </project>
