@@ -33,6 +33,6 @@ class CrowdfundingProduct extends Model
     {
         $value = $this->attributes['total_amount'] / $this->attributes['target_amount'];
 
-        return floatValue(number_format($value * 100, 2, '.', ''));
+        return floatval(number_format($value * 100, 2, '.', ''));
     }
 }
