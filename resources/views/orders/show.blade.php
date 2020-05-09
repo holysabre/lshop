@@ -25,7 +25,7 @@
                                         <a target="_blank" href="{{ route('products.show', [$item->product_id]) }}">
                                             <img src="{{ $item->product->image_url }}">
                                         </a>
-                                    </div>
+                                    </div>Ò
                                     <div>
               <span class="product-title">
                  <a target="_blank" href="{{ route('products.show', [$item->product_id]) }}">{{ $item->product->title }}</a>
@@ -112,8 +112,10 @@
                                         <button type="button" id="btn-receive" class="btn btn-sm btn-success">确认收货</button>
                                     </div>
                                 @endif
-                                <!-- 订单已支付，且退款状态是未退款时展示申请退款按钮 -->
-                                @if($order->paid_at && $order->refund_status === \App\Models\Order::REFUND_STATUS_PENDING)
+                                <!-- 不是众筹订单，已支付，且退款状态是未退款时展示申请退款按钮 -->
+                                @if($order->type !== \App\Models\Order::TYPE_CROWDFUNDING &&
+                                    $order->paid_at &&
+                                    $order->refund_status === \App\Models\Order::REFUND_STATUS_PENDING)
                                     <div class="refund-button">
                                         <button class="btn btn-sm btn-danger" id="btn-apply-refund">申请退款</button>
                                     </div>
