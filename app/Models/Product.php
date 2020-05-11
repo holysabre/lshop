@@ -38,12 +38,26 @@ class Product extends Model
         return $this->hasOne(CrowdfundingProduct::class);
     }
 
+    public function properties()
+    {
+        return $this->hasMany(ProductProperty::class);
+    }
+
     public function getImageUrlAttribute()
     {
         if(Str::startsWith($this->attributes['image'], ['http://', 'https://'])){
             return $this->attributes['image'];
         }
         return \Storage::disk('public')->url($this->attributes['image']);
+    }
+
+    public function getGroupedPropertiesAttribute()
+    {
+        return $this->properties
+            ->groupBy('name')
+            ->map(function ($item){
+                return $item->pluck('value')->all();
+            });
     }
 
 }
